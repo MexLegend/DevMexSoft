@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.back {
+    width: 20%;
+    position: relative;
+}
+
+.back a span {
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.back a img {
+    width: 10px;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.img:last-child {
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mTop {
+    margin-top: 108px;
+}
+
+.work-info p,
+.work-year p {
+    letter-spacing: 0.2;
+}
+
+.work-top {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    color: #fff;
+    box-shadow: 1px 0px 5px 2px rgba(0, 0, 0, 1.5);
+    top: 0;
+}
+
+.work-year {
+    width: 25%;
+}
+
+/* Button Styles */
+
+.outline {
+    /* position: relative; */
+    z-index: 3;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.outline:hover {
+    color: white;
+    background: #1172c4;
+    border-color: white;
+    transition: all 0.2s linear;
+}
+
+.outline:active {
+    border-radius: 22px;
+}
+
+.white-blue {
+    font-weight: 700;
+    color: #fff;
+}
+
+.white-blue:hover {
+    color: white;
+    background: #00aeef;
+    border-color: white;
+}
+
+/* Colors Work Theme */
+
+.extcen {
+    background: #ffb607;
+}
+
+.hybrid {
+    background: #24845b;
+}
+
+.las {
+    background: #fe8200;
+}
+
+.lawyer {
+    background: #26ade4;
+}
+
+.turbina {
+    background: #ff4181;
+}
+
+.xgaming {
+    background: #09ffeb;
+}

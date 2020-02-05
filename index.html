@@ -1,112 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <title>DevMexSoft</title>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!-- NavBar Section -->
     <nav class="navigation">
-        <div class="burger">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="l3"></div>
-        </div>
-        <div class="logo">
-            <a href="#home">
-                <h1>DevMexSoft</h1>
-            </a>
-        </div>
+      <div class="burger">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+      <div class="logo">
+        <a href="#home" class="dfr">
+          <img src="img/Logotipo.png" />
+          <span class="logo-text">Mexican Software Development</span>
+        </a>
+      </div>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">Acerca</a>
-            </li>
-            <li>
-                <a href="#skills">Habilidades</a>
-            </li>
-            <li>
-                <a href="#works">Trabajos</a>
-            </li>
-        </ul>
+      <ul class="nav-links">
+        <li class="dfc" style="display: none;">
+          <a class="dfc" href="#home">Inicio</a>
+        </li>
+        <li class="dfc">
+          <a class="dfc" href="#skills">Habilidades</a>
+        </li>
+        <li class="dfc">
+          <a class="dfc" href="#about">Nosotros</a>
+        </li>
+        <li class="dfc">
+          <a class="dfc" href="#works">Trabajos</a>
+        </li>
+        <li class="dfc contactUs">
+          <a class="dfc">Contacto</a>
+        </li>
+      </ul>
+
     </nav>
-    <!-- <div class="container wrap navbar">
-    </div> -->
+      <!-- Sidebar Close Trigger -->
+      <div class="sidebarCloseTrigger"></div>
 
-    <div data-section-name="home" class="container p80" id="home">
-        <div class="parallax" data-parallax="scroll" data-z-index="-1"  data-image-src="img/bg.jpg"></div>
-    </div>
+    <!-- Nabvar Change Color Trigger -->
+    <div id="startchange"></div>
 
-    <div data-section-name="about" class="container pd m100 about" id="about">
-        <h1>Acerca</h1>
-        <div class="about-info wrap">
-            <p>
-                Somos una empresa mexicana que se enfoca en desarrollar soluciones que se adapten a tus necesidades y superen las expectativas de tu proyecto.
-            </p>
-            <p>
-                Empleamos diferentes herramientas digitales actuales para brindar un servicio de calidad.
-            </p>
+    <!-- Content Container -->
+    <div class="container">
+      <!-- Home Section -->
+      <div
+        data-section-name="home"
+        class="page-section section-shadow"
+        id="home"
+      >
+        <div class="section-clip-path">
+          <div class="home-info dfr">
+            <div class="home-phrase dfc">
+              <span class="second-text phrase-text">Tu idea</span>
+              <span class="first-text phrase-text dfr">
+                <div class="third-text phrase-text"><span>Es</span></div>
+                El comienzo
+              </span>
+              <span class="first-text phrase-text dfr">
+                <div class="third-text phrase-text"><span>De</span></div>
+                Nuestra
+              </span>
+              <span class="first-text phrase-text">Creatividad</span>
+            </div>
+            <!-- <div class="contact-btn contactUs"><span>Contactanos</span></div> -->
+          </div>
         </div>
-    </div>
-    <div data-section-name="skills" class="container pd m100 skills" id="skills">
-        <h1>Habilidades</h1>
-        <div class="html">
-            <div class="tag-html">
+      </div>
+
+      <!-- Skills Section -->
+      <div
+        data-section-name="skills"
+        class="page-section section-shadow skills"
+        id="skills"
+      >
+        <div class="section-clip-path">
+          <div class="section-container dfc">
+            <h1 class="skills-text">Habilidades</h1>
+            <div class="html">
+              <div class="tag-html">
                 <p>HTML</p>
-            </div>
-            <div class="progressbar">
+              </div>
+              <div class="progressbar">
                 <div class="bar-html"></div>
+              </div>
             </div>
-        </div>
-        <div class="html">
-            <div class="tag-css">
-                <p>css</p>
-            </div>
-            <div class="progressbar">
+            <div class="html">
+              <div class="tag-css">
+                <p>CSS</p>
+              </div>
+              <div class="progressbar">
                 <div class="bar-css"></div>
+              </div>
             </div>
-        </div>
-        <div class="html">
-            <div class="tag-javascript">
-                <p>javascript</p>
-            </div>
-            <div class="progressbar">
+            <div class="html">
+              <div class="tag-javascript">
+                <p>Javascript</p>
+              </div>
+              <div class="progressbar">
                 <div class="bar-javascript"></div>
+              </div>
             </div>
-        </div>
-        <div class="html">
-            <div class="tag-angular">
-                <p>angular</p>
-            </div>
-            <div class="progressbar">
+            <div class="html">
+              <div class="tag-angular">
+                <p>Angular</p>
+              </div>
+              <div class="progressbar">
                 <div class="bar-angular"></div>
+              </div>
             </div>
+            <div class="html">
+              <div class="tag-php">
+                <p>PHP</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-php"></div>
+              </div>
+            </div>
+            <div class="html">
+              <div class="tag-node">
+                <p>NodeJs</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-node"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- About Section -->
+      <div
+        data-section-name="about"
+        class="page-section section-shadow"
+        id="about"
+      >
+        <div class="section-clip-path">
+          <div class="section-container dfr">
+            <div class="about-img mr15">
+              <img src="img/MackUpDevices.png" />
+            </div>
+            <div class="about-info">
+              <h1>Sobre nosotros</h1>
+              <p>
+                <span style="font-family: cursive; font-weight: 600;"
+                  >DevMexSoft</span
+                >
+                es una agencia mexicana especializada en el desarrollo y diseño
+                de sitios web personalizados.
+              </p>
+              <br />
+              <p>
+                Empleamos diferentes herramientas digitales actuales para
+                brindar un servicio de calidad.
+              </p>
+              <div class="about-more-info">
+                <h1>Más información</h1>
+                <div class="more-info-item dfr">
+                  <div class="more-info-icon">
+                    <img src="img/social/icon-mail.png" style="width: 90%;" />
+                  </div>
+                  <a href="mailto:devmexsoft@gmail.com" class="mail"
+                    ><span>devmexsoft@gmail.com</span></a
+                  >
+                </div>
+                <div class="more-info-item dfr">
+                  <div class="more-info-icon">
+                    <img
+                      src="img/social/icon-cellphone.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                  <span>348-113-6498</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Works Section -->
+      <div
+        data-section-name="works"
+        class="page-section section-shadow works"
+        id="works"
+      >
+        <div class="section-clip-path">
+          <div class="section-container dfc">
+            <h1>Echa un vistazo a nuestro trabajo</h1>
+            <h2>Creatividad y originalidad</h2>
+            <div class="works-category">
+              <button
+                id="design"
+                onclick="showRequiredCategory(this)"
+                class="active btn1"
+              >
+                <span>
+                  Diseño Web
+                </span>
+              </button>
+              <button id="animation" class="btn2" onclick="showRequiredCategory(this)">
+                <span>
+                  Diseño Gráfico
+                </span>
+              </button>
+            </div>
+            <div class="category-design showCategory">
+              <a href="Extcen.html">
+                <img src="img/ExtCentro/Extcen.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Extinguidores del Centro</span>
+                  </div>
+                </div>
+              </a>
+              <a href="Hybrid_Fit.html">
+                <img src="img/HybridFit/Hybrid_Fit.jpg" />
+                <div class="container-category">
+                  <div class="text-category"><span>Hybrid Fit</span></div>
+                </div>
+              </a>
+              <a href="Pino_Roble.html">
+                <img src="img/Lawyer/Pino_Roble.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Pino Y Roble Abogados</span>
+                  </div>
+                </div>
+              </a>
+              <a href="Xgaming.html">
+                <img src="img/XGaming/Xgaming.png" />
+                <div class="container-category">
+                  <div class="text-category"><span>XGaming</span></div>
+                </div>
+              </a>
+              <a href="Turbina.html">
+                <img src="img/Turbina/Turbina.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Turbina Restaurant</span>
+                  </div>
+                </div>
+              </a>
+              <a href="LAS.html">
+                <img src="img/LAS/Inicio.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Library Admin System</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="category-animation hideCategory">
+              <a>
+                <img src="img/GraphicDesign/LetreroBa.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Letrero Extinguidores del Centro</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Limpieza_Corte_Maleza.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Limpieza Maleza</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Etiqueta Del Bajio Chica.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Etiqueta Extinguidores del Bajio</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/event_1.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Carta Eventos</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Diseño_Frontal_Black_White.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Irene's Barber Negro y Blanco</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Diseño_Frontal_White_Black.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Irene's Barber Blanco y Negro</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Diseño_Posterior_Black_White.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Irene's Barber Negro y Blanco 2</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Diseño_Posterior_White_Black.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Irene's Barber Blanco y Negro 2</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Logo.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Logotipo AppGanaderos</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Logotipo.png" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Logotipo 10th Aniversary </span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/Catalogo_Señales.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Letrero No Estacionarse</span>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="img/GraphicDesign/slider_background.jpg" />
+                <div class="container-category">
+                  <div class="text-category">
+                    <span>Diseño Slider Extinguidores del Centro</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div data-section-name="works" class="container pd m100 works" id="works">
-        <h1>Trabajos</h1>
-        <div class="works-category">
-            <button id="design" onclick="showRequiredCategory(this)" class="active">Web Design</button>
-            <button id="animation" onclick="showRequiredCategory(this)" class="active">Web Animation</button>
+    <!-- Footer -->
+    <div class="page-section section-shadow dfc" id="footer">
+      <div class="footer-container">
+        <div class="footer-section-container dfr">
+          <div class="footer-info">
+            <span>Copyright © 2020, DevMexSoft.</span>
+          </div>
         </div>
-        <div class="category-design showCategory">
-            <a href=""><img src="img/Extcen.jpg" alt=""></a>
-            <a href=""><img src="img/Hybrid_Fit.jpg" alt=""></a>
-            <a href=""><img src="img/Pino_Roble.jpg" alt=""></a>
-            <a href=""><img src="img/Xgaming.png" alt=""></a>
-        </div>
-        <div class="category-animation hideCategory">
-            <!-- <a href=""><img src="img/estatic.jpg" alt=""></a>
-            <a href=""><img src="img/estatic.jpg" alt=""></a>
-            <a href=""><img src="img/estatic.jpg" alt=""></a> -->
-        </div>
+      </div>
     </div>
-    
+
+    <!-- Contact Modal -->
+    <div class="modal-container close-modal-trigger"></div>
+
+    <div class="modal contact-modal" data-active="off">
+      <div class="full-size pos-a-t-l" style="z-index: 1;">
+        <div class="ledge ledge-minus-16-deg"></div>
+      </div>
+      <div class="contact-modal-content" style="z-index: 1;">
+        <div class="close-modal close-modal-trigger dfr">
+          <span>X</span>
+        </div>
+        <h4 class="no-line">Contactanos</h4>
+        <a
+          href="mailto:devmexsoft@gmail.com"
+          class="huge-text underline-link js-cursor-follower-active"
+          ><span>devmexsoft@gmail.com</span></a
+        >
+      </div>
+      <div class="contact-social dfc">
+        <h3>
+          <span class="not-awkward"
+            >Social<span class="awkward">ly Awkward</span></span
+          >
+        </h3>
+        <ul class="social-list">
+          <li>
+            <a
+            
+              class="icon icon-twitter"
+              href="https://twitter.com/DevMexSoft1"
+            ></a>
+          </li>
+          <li>
+            <a
+            
+              class="icon icon-linkedin"
+              href="https://www.linkedin.com/in/devmexsoft-%C2%AE-a473691a0/"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
@@ -117,5 +426,5 @@
     <script src="js/TweenMax.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
